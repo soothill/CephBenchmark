@@ -1,0 +1,34 @@
+# This will create the different pools required to allow for benchmarks to be run
+
+ceph osd pool create ecrbd32 erasure osd32
+ceph osd pool set ecrbd32 pg_num 32
+ceph osd pool set ecrbd32 allow_ec_overwrites true
+ceph osd pool application enable ecrbd32 rbd
+ceph osd pool create ecrbd42 erasure osd42
+ceph osd pool set ecrbd42 pg_num 32
+ceph osd pool set ecrbd42 allow_ec_overwrites true
+ceph osd pool application enable ecrbd42 rbd
+ceph osd pool create ecrbd52 erasure osd52
+ceph osd pool set ecrbd52 pg_num 32
+ceph osd pool set ecrbd52 allow_ec_overwrites true
+ceph osd pool application enable ecrbd52 rbd
+ceph osd pool create ecrbd62 erasure osd62
+ceph osd pool set ecrbd62 pg_num 32
+ceph osd pool set ecrbd62 allow_ec_overwrites true
+ceph osd pool application enable ecrbd62 rbd
+ceph osd pool create ecrbd72 erasure osd72
+ceph osd pool set ecrbd72 pg_num 32
+ceph osd pool set ecrbd72 allow_ec_overwrites true
+ceph osd pool application enable ecrbd72 rbd
+ceph osd pool create ecrbd82 erasure osd82
+ceph osd pool set ecrbd82 pg_num 32
+ceph osd pool set ecrbd82 allow_ec_overwrites true
+ceph osd pool application enable ecrbd82 rbd
+ceph osd pool create ecrbd43 erasure osd43
+ceph osd pool set ecrbd43 pg_num 32
+ceph osd pool set ecrbd43 allow_ec_overwrites true
+ceph osd pool application enable ecrbd43 rbd
+ceph osd pool create ecrbd83 erasure osd83
+ceph osd pool set ecrbd83 pg_num 32
+ceph osd pool set ecrbd83 allow_ec_overwrites true
+ceph osd pool application enable ecrbd83 rbd
